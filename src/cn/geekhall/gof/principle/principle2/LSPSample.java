@@ -10,7 +10,7 @@ package cn.geekhall.gof.principle.principle2;
 
 public class LSPSample {
     public static void execute(){
-        System.out.println("==================== 里氏替换原则 Sample START =====================");
+        System.out.println("==================== Principle 2 : 里氏替换原则 Sample START =====================");
         Bird swallow = new Swallow();
         Bird brownKiwi = new BrownKiwiWrongSample();
 
@@ -25,6 +25,7 @@ public class LSPSample {
         } catch (Exception err){
             System.out.println("发生错误了");
         }
-        System.out.println("==================== 里氏替换原则 Sample END =====================");
+        System.out.println("==================== Principle 2 : 里氏替换原则 Sample END =====================");
+        System.out.println("");
     }
 }

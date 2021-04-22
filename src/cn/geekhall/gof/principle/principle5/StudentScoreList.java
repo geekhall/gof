@@ -9,7 +9,7 @@
 package cn.geekhall.gof.principle.principle5;
 
 public class StudentScoreList implements InputModule, CountModule, PrintModule{
-    private StudentScoreList(){
+    public StudentScoreList(){
 
     }
 

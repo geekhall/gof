@@ -10,12 +10,13 @@ package cn.geekhall.gof.principle.principle1;
 
 public class OCPSample {
     public static void execute(){
-        System.out.println("==================== 开闭原则 Sample START =====================");
+        System.out.println("==================== Principle 1 : 开闭原则 Sample START =====================");
         WindowsSample sample = new WindowsSample();
         sample.setSubject(new SpecificSubjectA());
         sample.display();
         sample.setSubject(new SpecificSubjectB());
         sample.display();
-        System.out.println("==================== 开闭原则 Sample END =====================");
+        System.out.println("==================== Principle 1 : 开闭原则 Sample END =====================");
+        System.out.println("");
     }
 }

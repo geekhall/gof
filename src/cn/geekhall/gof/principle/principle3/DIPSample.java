@@ -10,12 +10,13 @@ package cn.geekhall.gof.principle.principle3;
 
 public class DIPSample {
     public static void execute(){
-        System.out.println("==================== 依赖倒置原则 Sample START =====================");
+        System.out.println("==================== Principle 3 : 依赖倒置原则 Sample START =====================");
         Customer wang = new Customer();
         System.out.println("顾客王先森逛了以下这些商场：");
         wang.shopping(new JingDong());
         wang.shopping(new TaoBao());
         wang.shopping(new PinDuoDuo());
-        System.out.println("==================== 依赖倒置原则 Sample END =====================");
+        System.out.println("==================== Principle 3 : 依赖倒置原则 Sample END =====================");
+        System.out.println("");
     }
 }

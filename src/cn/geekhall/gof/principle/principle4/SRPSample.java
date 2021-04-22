@@ -10,7 +10,7 @@ package cn.geekhall.gof.principle.principle4;
 
 public class SRPSample {
     public static void execute(){
-        System.out.println("==================== 单一职责原则 Sample START =====================");
+        System.out.println("==================== Principle 4 : 单一职责原则 Sample START =====================");
         System.out.println("Bad Sample");
         StudentWork1 studentWork1 = new StudentWork1();
         studentWork1.attendenceStatistic();
@@ -26,6 +26,7 @@ public class SRPSample {
         StudentWork studentWork = new StudentWork();
         studentWork.lifeSupport(assistant);
         studentWork.studySupport(teacher);
-        System.out.println("==================== 单一职责原则 Sample END =====================");
+        System.out.println("==================== Principle 4 : 单一职责原则 Sample END =====================");
+        System.out.println("");
     }
 }
