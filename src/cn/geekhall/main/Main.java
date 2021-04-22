@@ -8,6 +8,8 @@
  */
 package cn.geekhall.main;
 
+import cn.geekhall.gof.creation.prototype.PrototypeSample1;
+import cn.geekhall.gof.creation.singleton.SingletonSample;
 import cn.geekhall.gof.principle.principle1.OCPSample;
 import cn.geekhall.gof.principle.principle2.LSPSample;
 import cn.geekhall.gof.principle.principle3.DIPSample;
@@ -58,7 +60,15 @@ public class Main {
          */
         CRPSample.execute();
 
+        /**
+         * 创建型模式 1 : 单例模式（Singleton）
+         */
+        SingletonSample.execute();
 
+        /**
+         * 创建型模式 2 : 原型模式（Prototype）
+         */
+        PrototypeSample1.execute();
 
     }
 

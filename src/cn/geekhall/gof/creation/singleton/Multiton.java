@@ -13,7 +13,7 @@ import java.util.*;
 public class Multiton {
 
     // 控制实例池的最大数量
-    private static final Integer MAX_INSTANCE_NUM = 10;
+    private static final Integer MAX_INSTANCE_NUM = 3;
 
     // 创建一个单例的池子
     private static Map<Integer, Multiton> instancePool = new HashMap<Integer, Multiton>();
@@ -46,7 +46,7 @@ public class Multiton {
             instance = new Multiton();
             instancePool.put(num, instance);
         }
-        num = (num + 1)% MAX_INSTANCE_NUM;
+        num = (num + 1) % MAX_INSTANCE_NUM;
         return instance;
     }
 }
