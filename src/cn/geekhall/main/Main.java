@@ -8,7 +8,10 @@
  */
 package cn.geekhall.main;
 
-import cn.geekhall.gof.creation.prototype.PrototypeSample1;
+import cn.geekhall.gof.creation.factory.factorymethod.FactoryMethodSample;
+import cn.geekhall.gof.creation.factory.simplefactory.SimpleFactory;
+import cn.geekhall.gof.creation.factory.simplefactory.SimpleFactorySample;
+import cn.geekhall.gof.creation.prototype.PrototypeSample;
 import cn.geekhall.gof.creation.singleton.SingletonSample;
 import cn.geekhall.gof.principle.principle1.OCPSample;
 import cn.geekhall.gof.principle.principle2.LSPSample;
@@ -68,7 +71,17 @@ public class Main {
         /**
          * 创建型模式 2 : 原型模式（Prototype）
          */
-        PrototypeSample1.execute();
+//        PrototypeSample.execute();
+
+        /**
+         * 创建型模式 3 ： 简单工厂模式（SimpleFactory）
+         */
+        SimpleFactorySample.execute();
+
+        /**
+         * 创建型模式 3 ： 工厂方法模式（FactoryMethod）
+         */
+        FactoryMethodSample.execute();
 
     }
 

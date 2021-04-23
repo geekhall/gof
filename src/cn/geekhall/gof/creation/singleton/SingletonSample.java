@@ -40,7 +40,7 @@ public class SingletonSample {
         for ( int i=0; i<5; i++){
             System.out.println("list "+ i + " : " + list.get(i));
         }
-        System.out.println("==================== 创建型模式 1 : 单例模式（Singleton） Sample END =====================");
+        System.out.println("==================== 创建型模式 1 : 单例模式（Singleton） Sample END =====================\n");
 
     }
 }
