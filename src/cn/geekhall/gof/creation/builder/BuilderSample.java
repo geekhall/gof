@@ -18,7 +18,7 @@ public class BuilderSample {
         Director microsoftDirector = new Director(microsoft);
         Computer surface = microsoftDirector.construct();
         surface.show();
-        
+
         System.out.println("==================== 创建型模式 4 : 建造则模式（Builder） Sample END =====================\n");
     }
 }
