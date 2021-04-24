@@ -26,7 +26,6 @@ public class AbstractFactorySample {
         productC1.showC();
         productC2.showC();
 
-
         System.out.println("==================== 创建型模式 3 : 抽象工厂模式（AbstractFactory） Sample START =====================\n");
     }
 }

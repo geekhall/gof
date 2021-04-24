@@ -8,6 +8,7 @@
  */
 package cn.geekhall.main;
 
+import cn.geekhall.gof.creation.builder.BuilderSample;
 import cn.geekhall.gof.creation.factory.abstractfactory.AbstractFactorySample;
 import cn.geekhall.gof.creation.factory.factorymethod.AbstractFactory;
 import cn.geekhall.gof.creation.factory.factorymethod.FactoryMethodSample;
@@ -89,6 +90,11 @@ public class Main {
          * 创建型模式 3 ： 抽象工厂模式（AbstractFactory）
          */
         AbstractFactorySample.execute();
+
+        /**
+         * 创建型模式 4 ： 创建者模式（Builder）
+         */
+        BuilderSample.execute();
 
     }
 
