@@ -13,6 +13,7 @@ public class ProxySample {
         System.out.println("==================== 结构型模式 1 : 代理模式（Proxy） Sample START =====================");
         Proxy proxy = new Proxy();
         proxy.request();
-        System.out.println("==================== 结构型模式 1 : 代理模式（Proxy） Sample END =====================\n");
+        System.out.println("==================== 结构型模式 1 : 代理模式（Proxy） Sample END =======================");
+        System.out.println();
     }
 }

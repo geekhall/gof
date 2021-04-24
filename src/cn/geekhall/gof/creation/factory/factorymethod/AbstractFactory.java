@@ -7,5 +7,5 @@ package cn.geekhall.gof.creation.factory.factorymethod;
  * @date 4/23/21 9:15 PM
  */
 public interface AbstractFactory {
-    public Product newProduct();
+    Product newProduct();
 }

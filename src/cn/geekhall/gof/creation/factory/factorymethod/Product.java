@@ -7,5 +7,5 @@ package cn.geekhall.gof.creation.factory.factorymethod;
  * @date 4/23/21 9:12 PM
  */
 public interface Product {
-    public void show();
+    void show();
 }

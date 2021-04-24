@@ -9,10 +9,10 @@
 package cn.geekhall.gof.creation.prototype;
 
 public interface Shape extends Cloneable {
-    public Object clone();
+    Object clone();
 
     /**
      * 计算面积
      */
-    public void countArea();
+    void countArea();
 }

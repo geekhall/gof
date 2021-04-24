@@ -7,5 +7,5 @@ package cn.geekhall.gof.structure.adapter;
  * @date 4/24/21 6:30 PM
  */
 public interface Target {
-    public void request();
+    void request();
 }

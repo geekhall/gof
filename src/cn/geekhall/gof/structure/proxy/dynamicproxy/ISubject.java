@@ -7,5 +7,5 @@ package cn.geekhall.gof.structure.proxy.dynamicproxy;
  * @date 4/24/21 2:36 PM
  */
 public interface ISubject {
-    public void request();
+    void request();
 }

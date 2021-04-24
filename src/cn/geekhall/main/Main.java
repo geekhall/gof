@@ -10,6 +10,7 @@ package cn.geekhall.main;
 
 import cn.geekhall.basic.reflaction.ReflactionSample;
 import cn.geekhall.gof.structure.adapter.AdapterSample;
+import cn.geekhall.gof.structure.bridge.BridgeSample;
 
 import java.lang.reflect.InvocationTargetException;
 
@@ -112,11 +113,16 @@ public class Main {
 //         * 结构型模式 1 ： 代理模式（Proxy）
 //         */
 //        ProxySample.execute();
+//
+//        /**
+//         * 结构型模式 2 ： 适配器模式（Adapter）
+//         */
+//        AdapterSample.execute();
 
         /**
-         * 结构型模式 2 ： 适配器模式（Adapter）
+         * 结构型模式 3 ： 桥接模式（Bridge）
          */
-        AdapterSample.execute();
+        BridgeSample.execute();
 
     }
 

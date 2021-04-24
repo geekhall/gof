@@ -10,5 +10,5 @@ package cn.geekhall.gof.principle.principle3;
 
 
 public interface Shop {
-    public String sell();
+    String sell();
 }

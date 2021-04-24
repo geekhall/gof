@@ -9,5 +9,5 @@ package cn.geekhall.gof.structure.adapter.sample2;
 public interface Net2Usb {
 
     // 作用： 处理请求，网线 -> USB
-    public void handleRequest();
+    void handleRequest();
 }
