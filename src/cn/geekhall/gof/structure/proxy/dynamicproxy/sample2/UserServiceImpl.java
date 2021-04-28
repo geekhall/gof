@@ -1,4 +1,6 @@
-package cn.geekhall.gof.structure.proxy.sample2;
+package cn.geekhall.gof.structure.proxy.dynamicproxy.sample2;
+
+import cn.geekhall.gof.structure.proxy.dynamicproxy.sample2.UserService;
 
 /**
  * @author yiny

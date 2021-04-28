@@ -1,4 +1,4 @@
-package cn.geekhall.gof.structure.proxy.sample1;
+package cn.geekhall.gof.structure.proxy.staticproxy.sample1;
 
 /**
  * @author yiny

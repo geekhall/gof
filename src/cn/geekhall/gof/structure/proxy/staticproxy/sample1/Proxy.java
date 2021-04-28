@@ -1,6 +1,4 @@
-package cn.geekhall.gof.structure.proxy.sample1;
-
-import java.math.BigDecimal;
+package cn.geekhall.gof.structure.proxy.staticproxy.sample1;
 
 /**
  * @author yiny

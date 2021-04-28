@@ -8,6 +8,7 @@
  */
 package cn.geekhall.main;
 
+import cn.geekhall.arch.spi.IShout;
 import cn.geekhall.basic.reflaction.ReflactionSample;
 import cn.geekhall.gof.creation.builder.BuilderSample;
 import cn.geekhall.gof.creation.factory.abstractfactory.AbstractFactorySample;
@@ -26,6 +27,7 @@ import cn.geekhall.gof.structure.bridge.BridgeSample;
 import cn.geekhall.gof.structure.proxy.ProxySample;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.ServiceLoader;
 
 public class Main {
 
@@ -137,6 +139,11 @@ public class Main {
          */
         BridgeSample.execute();
 
+        ServiceLoader<IShout> shorts = ServiceLoader.load(IShout.class);
+        for (IShout s : shorts){
+            System.out.println("aaa");
+            s.shout();
+        }
     }
 
 }
