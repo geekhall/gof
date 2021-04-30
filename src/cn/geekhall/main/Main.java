@@ -23,6 +23,13 @@ import cn.geekhall.gof.principle.principle6.LKPSample;
 import cn.geekhall.gof.principle.principle7.CRPSample;
 import cn.geekhall.gof.structure.adapter.AdapterSample;
 import cn.geekhall.gof.structure.bridge.BridgeSample;
+import cn.geekhall.gof.structure.composite.ComponentSample;
+import cn.geekhall.gof.structure.decorator.Component;
+import cn.geekhall.gof.structure.decorator.DecoratorSample;
+import cn.geekhall.gof.structure.facade.Facade;
+import cn.geekhall.gof.structure.facade.FacadeSample;
+import cn.geekhall.gof.structure.flyweight.Flyweight;
+import cn.geekhall.gof.structure.flyweight.FlyweightSample;
 import cn.geekhall.gof.structure.proxy.ProxySample;
 
 import java.lang.reflect.InvocationTargetException;
@@ -137,6 +144,27 @@ public class Main {
          */
         BridgeSample.execute();
 
+        /**
+         * 结构型模式 4 ： 装饰器模式 （Decorator）
+         */
+        DecoratorSample.execute();
+
+
+        /**
+         * 结构型模式 5 ： 外观模式 （Facade）
+         */
+        FacadeSample.execute();
+
+
+        /**
+         * 结构型模式 6 ： 享元模式（Flyweight)
+         */
+        FlyweightSample.execute();
+
+        /**
+         * 结构型模式 7 ： 组合模式（Component)
+         */
+        ComponentSample.execute();
     }
 
 }
