@@ -28,21 +28,21 @@ public class Proxy implements Rent{
     /**
      * 看房子
      */
-    public void seeHouse(){
+    void seeHouse(){
         System.out.println("中介带你看房子");
     }
 
     /**
      * 签合同
      */
-    public void makeContract(){
+    void makeContract(){
         System.out.println("签合同");
     }
 
     /**
      * 收中介费
      */
-    public void charge(double cost){
+    void charge(double cost){
         System.out.println("收中介费， 价格： " + cost);
     }
 }

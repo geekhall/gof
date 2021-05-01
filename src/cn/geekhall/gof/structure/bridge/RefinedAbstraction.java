@@ -7,7 +7,7 @@ package cn.geekhall.gof.structure.bridge;
  * @date 4/24/21 9:24 PM
  */
 public class RefinedAbstraction extends Abstraction {
-    protected RefinedAbstraction(Implementor implementor){
+    RefinedAbstraction(Implementor implementor){
         super(implementor);
     }
     @Override

@@ -8,25 +8,25 @@
  */
 package cn.geekhall.gof.principle.principle4;
 
-public class Teacher {
+class Teacher {
     /**
      * 科研指导
      */
-    public void research(){
+    void research(){
         System.out.println("科研指导");
     }
 
     /**
      * 学业指导
      */
-    public void teach(){
+    void teach(){
         System.out.println("学业指导");
     }
 
     /**
      * 就业指导
      */
-    public void employmentGuidance(){
+    void employmentGuidance(){
         System.out.println("就业指导");
     }
 }

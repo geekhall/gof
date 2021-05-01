@@ -9,7 +9,7 @@ package cn.geekhall.gof.behavior.command;
 public class ConcreteCommand implements Command {
     private Receiver receiver;
 
-    public ConcreteCommand() {
+    ConcreteCommand() {
         this.receiver = new Receiver();
     }
 

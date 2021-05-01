@@ -18,7 +18,7 @@ public class WindowsSample {
     }
 
     private AbstractSubject subject;
-    public void display(){
+    void display(){
         subject.display();
     }
 }

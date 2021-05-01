@@ -7,7 +7,7 @@ package cn.geekhall.gof.structure.bridge;
  * @date 4/24/21 8:56 PM
  */
 public abstract class Abstraction {
-    protected Implementor implementor;
+    Implementor implementor;
 
     protected Abstraction(Implementor implementor) {
         this.implementor = implementor;

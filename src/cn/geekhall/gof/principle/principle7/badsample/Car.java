@@ -7,7 +7,7 @@ package cn.geekhall.gof.principle.principle7.badsample;
  * @date 4/22/21 1:03 PM
  */
 public class Car {
-    public Car() {
+    Car() {
     }
 
     public void move(){

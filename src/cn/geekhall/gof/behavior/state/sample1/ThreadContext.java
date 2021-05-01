@@ -17,7 +17,7 @@ public class ThreadContext {
         return threadState;
     }
 
-    public void setThreadState(ThreadState threadState) {
+    void setThreadState(ThreadState threadState) {
         this.threadState = threadState;
     }
 

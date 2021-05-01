@@ -6,13 +6,13 @@ package cn.geekhall.gof.behavior.state.sample1;
  * @Desc 具体状态类：运行状态
  * @date 5/1/21 4:28 PM
  */
-public class Running extends ThreadState{
-    public Running() {
+class Running extends ThreadState{
+    Running() {
         stateName = "运行状态";
         System.out.println("当前线程处于：运行状态。");
     }
 
-    public void suspend(ThreadContext context){
+    void suspend(ThreadContext context){
         System.out.print("调用suspend()方法 --> ");
         if (stateName.equals("运行状态")){
             context.setThreadState(new Blocked());
@@ -21,7 +21,7 @@ public class Running extends ThreadState{
         }
     }
 
-    public void stop(ThreadContext context){
+    void stop(ThreadContext context){
         System.out.print("调用stop()方法 --> ");
         if (stateName.equals("运行状态")){
             context.setThreadState(new Dead());

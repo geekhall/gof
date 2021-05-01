@@ -8,7 +8,7 @@ package cn.geekhall.gof.structure.bridge.sample1;
  */
 public abstract class Computer {
     // 使用组合， 品牌
-    protected Brand brand;
+    Brand brand;
 
     public Computer(Brand brand) {
         this.brand = brand;

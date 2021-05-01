@@ -19,7 +19,7 @@ public class Bird {
         this.flySpeed = flySpeed;
     }
 
-    public double getFlyTime(double distance) {
+    double getFlyTime(double distance) {
         return (distance / flySpeed);
     }
 }

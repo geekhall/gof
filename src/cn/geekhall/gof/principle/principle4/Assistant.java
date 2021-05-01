@@ -8,25 +8,25 @@
  */
 package cn.geekhall.gof.principle.principle4;
 
-public class Assistant {
+class Assistant {
     /**
      * 心理辅导
      */
-    public void psychologicalGuidance(){
+    void psychologicalGuidance(){
         System.out.println("心理辅导");
     }
 
     /**
      * 班级管理
      */
-    public void classManagement(){
+    void classManagement(){
         System.out.println("班级管理");
     }
 
     /**
      * 出勤统计
      */
-    public void attendenceStatistic(){
+    void attendenceStatistic(){
         System.out.println("出勤统计");
     }
 }

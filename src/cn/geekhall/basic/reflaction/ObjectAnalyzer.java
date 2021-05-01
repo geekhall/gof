@@ -12,11 +12,11 @@ import java.util.ArrayList;
  * @Desc
  * @date 4/24/21 4:43 PM
  */
-public class ObjectAnalyzer {
+class ObjectAnalyzer {
 
     private ArrayList<Object> visited = new ArrayList<>();
 
-    public String toString(Object obj) {
+    String toString(Object obj) {
         if (obj == null) {
             return "null";
         }
@@ -46,34 +46,34 @@ public class ObjectAnalyzer {
             return r + "\n}";
         }
         // 既不是String，也不是数组时，输出该对象的类型和属性值
-        String r = cl.getName();
+        StringBuilder r = new StringBuilder(cl.getName());
         do {
-            r += "[";
+            r.append("[");
             Field[] fields = cl.getDeclaredFields();    // 获取该类自己定义的所有域，包括私有的，不包括父类的
             AccessibleObject.setAccessible(fields, true); // 访问私有的属性，需要打开这个设置，否则会报非法访问异常
             for (Field f : fields) {
                 if (!Modifier.isStatic(f.getModifiers())) { // 通过 Modifier 可获取该域的修饰符，这里判断是否为 static
-                    if (!r.endsWith("[")) {
-                        r += ",";
+                    if (!r.toString().endsWith("[")) {
+                        r.append(",");
                     }
-                    r += f.getName() + "=";     // 域名称
+                    r.append(f.getName()).append("=");     // 域名称
                     try {
                         Class t = f.getType();  // 域（属性）的类型
                         Object val = f.get(obj);   // 获取obj对象上该域的实际值
                         if (t.isPrimitive()) {     // 如果类型为8种基本类型，则直接输出
-                            r += val;
+                            r.append(val);
                         } else {
-                            r += toString(val);     // 不是8种基本类型，递归调用toString
+                            r.append(toString(val));     // 不是8种基本类型，递归调用toString
                         }
                     } catch (IllegalAccessException e) {
                         e.printStackTrace();
                     }
                 }
             }
-            r += "]";
+            r.append("]");
             cl = cl.getSuperclass(); // 继续打印超类的类信息
         } while (cl != null);
-        return r;
+        return r.toString();
     }
 }
 

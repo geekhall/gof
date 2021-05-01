@@ -10,7 +10,7 @@ import java.util.*;
  * @Desc 多例模式
  * @date 4/22/21 7:56 PM
  */
-public class Multiton {
+class Multiton {
 
     // 控制实例池的最大数量
     private static final Integer MAX_INSTANCE_NUM = 3;
@@ -40,7 +40,7 @@ public class Multiton {
      * 获取实例方法，如果存在则返回，否则创建一个新的实例加入池子中并返回。
      * @return
      */
-    public synchronized static Multiton getInstance(){
+    synchronized static Multiton getInstance(){
         Multiton instance = instancePool.get(num);
         if (instance == null){
             instance = new Multiton();

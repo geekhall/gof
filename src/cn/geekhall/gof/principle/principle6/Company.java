@@ -6,13 +6,13 @@ package cn.geekhall.gof.principle.principle6;
  * @Desc
  * @date 4/22/21 12:46 PM
  */
-public class Company {
+class Company {
     private String name;
 
     Company(String name){
         this.name = name;
     }
-    public String getName(){
+    String getName(){
         return name;
     }
 }

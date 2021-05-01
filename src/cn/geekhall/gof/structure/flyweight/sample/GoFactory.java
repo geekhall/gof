@@ -8,10 +8,10 @@ import java.util.ArrayList;
  * @Desc
  * @date 4/29/21 1:03 PM
  */
-public class GoFactory {
+class GoFactory {
     private ArrayList<ChessPieces> qz;
 
-    public GoFactory() {
+    GoFactory() {
         qz = new ArrayList<ChessPieces>();
         ChessPieces w = new WhitePieces();
         qz.add(w);
@@ -20,7 +20,7 @@ public class GoFactory {
 
     }
 
-    public ChessPieces getChessPieces(String type){
+    ChessPieces getChessPieces(String type){
         if (type.equalsIgnoreCase("w")){
             return qz.get(0);
         } else if (type.equalsIgnoreCase("b")){

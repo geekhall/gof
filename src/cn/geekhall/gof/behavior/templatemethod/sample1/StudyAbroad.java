@@ -17,14 +17,15 @@ public abstract class StudyAbroad {
         arriving();         // 抵达
     }
 
-    public void applyForPassport(){
+    private void applyForPassport() {
         System.out.println("四.办理因私出国护照、出境卡和公证：");
     }
 
-    public void applyForVisa() {
+    private void applyForVisa() {
         System.out.println("五.申请签证：");
     }
-    public void readyGoAbroad() {
+
+    private void readyGoAbroad() {
         System.out.println("六.体检、订机票、准备行装：");
     }
 

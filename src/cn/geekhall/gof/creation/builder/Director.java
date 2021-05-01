@@ -14,7 +14,7 @@ public class Director {
     }
 
     // 产品构建与组装方法
-    public Computer construct(){
+    Computer construct(){
         builder.buildCpu();
         builder.buildDisk();
         builder.buildMemory();

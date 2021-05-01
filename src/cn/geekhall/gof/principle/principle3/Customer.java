@@ -8,8 +8,8 @@
  */
 package cn.geekhall.gof.principle.principle3;
 
-public class Customer {
-    public void shopping(Shop shop){
+class Customer {
+    void shopping(Shop shop){
         System.out.println(shop.sell());
     }
 }

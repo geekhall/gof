@@ -16,46 +16,46 @@ package cn.geekhall.gof.principle.principle4;
  * 如果将这些工作交给一位老师负责显然不合理，
  * 正确的做 法是生活辅导由辅导员负责，学业指导由学业导师负责，
  */
-public class StudentWork1 {
+class StudentWork1 {
     /**
      * 心理辅导
      */
-    public void psychologicalGuidance(){
+    void psychologicalGuidance(){
         System.out.println("心理辅导");
     }
 
     /**
      * 班级管理
      */
-    public void classManagement(){
+    void classManagement(){
         System.out.println("班级管理");
     }
 
     /**
      * 出勤统计
      */
-    public void attendenceStatistic(){
+    void attendenceStatistic(){
         System.out.println("出勤统计");
     }
 
     /**
      * 科研指导
      */
-    public void research(){
+    void research(){
         System.out.println("科研指导");
     }
 
     /**
      * 学业指导
      */
-    public void teach(){
+    void teach(){
         System.out.println("学业指导");
     }
 
     /**
      * 就业指导
      */
-    public void employmentGuidance(){
+    void employmentGuidance(){
         System.out.println("就业指导");
     }
 }

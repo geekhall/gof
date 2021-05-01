@@ -7,7 +7,7 @@ package cn.geekhall.gof.principle.principle7.badsample;
  * @date 4/22/21 1:04 PM
  */
 public class ElectricCar extends Car{
-    public ElectricCar() {
+    ElectricCar() {
     }
     public void move(){
 

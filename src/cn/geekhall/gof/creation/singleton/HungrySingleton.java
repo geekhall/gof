@@ -6,13 +6,13 @@ package cn.geekhall.gof.creation.singleton;
  * @Desc
  * @date 4/22/21 7:54 PM
  */
-public class HungrySingleton {
+class HungrySingleton {
 
     private static final HungrySingleton instance = new HungrySingleton();
 
     private HungrySingleton() {
     }
-    public static HungrySingleton getInstance(){
+    static HungrySingleton getInstance(){
         return instance;
     }
 

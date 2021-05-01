@@ -6,8 +6,8 @@ package cn.geekhall.gof.structure.adapter.sample1;
  * @Desc 光能发动机
  * @date 4/24/21 6:44 PM
  */
-public class OpticalMotor {
-    public void opticalDrive(){
+class OpticalMotor {
+    void opticalDrive(){
         System.out.println("光能发动机驱动汽车！");
     }
 }

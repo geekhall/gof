@@ -16,11 +16,11 @@ package cn.geekhall.gof.principle.principle4;
  * 正确的做 法是生活辅导由辅导员负责，学业指导由学业导师负责，
  *
  */
-public class StudentWork {
+class StudentWork {
     /**
      * 生活辅导
      */
-    public void lifeSupport(Assistant assistant){
+    void lifeSupport(Assistant assistant){
         assistant.attendenceStatistic();
         assistant.classManagement();
         assistant.psychologicalGuidance();
@@ -29,7 +29,7 @@ public class StudentWork {
     /**
      * 学业辅导
      */
-    public void studySupport(Teacher teacher){
+    void studySupport(Teacher teacher){
         teacher.teach();
         teacher.research();
         teacher.employmentGuidance();

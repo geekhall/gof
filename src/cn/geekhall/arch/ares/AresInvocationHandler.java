@@ -34,7 +34,7 @@ public class AresInvocationHandler implements InvocationHandler {
         return Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader(), target.getClass().getInterfaces(), this);
     }
 
-    public void log(String msg){
+    void log(String msg){
         System.out.println("+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= " + msg + " +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=");
     }
 }

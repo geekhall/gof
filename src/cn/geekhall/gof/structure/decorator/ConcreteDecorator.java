@@ -17,7 +17,7 @@ public class ConcreteDecorator extends Decorator {
         addedFunction();
     }
 
-    public void addedFunction(){
+    void addedFunction(){
         System.out.println("为具体构件角色增加额外的功能。addedFunction()");
     }
 }

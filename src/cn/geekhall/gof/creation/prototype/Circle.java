@@ -26,10 +26,10 @@ public class Circle implements Shape {
 
     @Override
     public void countArea() {
-        int r = 0;
-        System.out.println("这是一个圆形，请输入圆的半径：");
-        Scanner input = new Scanner(System.in);
-        r = input.nextInt();
+        int r = 10;
+//        System.out.println("这是一个圆形，请输入圆的半径：");
+//        Scanner input = new Scanner(System.in);
+//        r = input.nextInt();
         System.out.println("圆的面积=" + 3.1415 * r * r + "\n");
     }
 }

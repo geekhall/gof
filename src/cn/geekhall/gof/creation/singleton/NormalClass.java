@@ -11,7 +11,7 @@ import java.util.Objects;
 public class NormalClass {
     private String name;
 
-    public NormalClass(){
+    NormalClass(){
 
     }
     public NormalClass(String name) {

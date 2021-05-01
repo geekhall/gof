@@ -11,15 +11,15 @@ public class Computer {
     private String memory;
     private String disk;
 
-    public void setCpu(String cpu) {
+    void setCpu(String cpu) {
         this.cpu = cpu;
     }
 
-    public void setMemory(String memory) {
+    void setMemory(String memory) {
         this.memory = memory;
     }
 
-    public void setDisk(String disk) {
+    void setDisk(String disk) {
         this.disk = disk;
     }
 

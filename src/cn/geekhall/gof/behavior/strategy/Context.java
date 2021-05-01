@@ -13,11 +13,11 @@ public class Context {
         return strategy;
     }
 
-    public void setStrategy(Strategy strategy) {
+    void setStrategy(Strategy strategy) {
         this.strategy = strategy;
     }
 
-    public void strategyMethod(){
+    void strategyMethod(){
         strategy.strategyMethod();
     }
 }

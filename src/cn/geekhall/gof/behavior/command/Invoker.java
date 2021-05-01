@@ -17,7 +17,7 @@ public class Invoker {
         this.command = command;
     }
 
-    public void call(){
+    void call(){
         System.out.println("调用者执行命令command....");
         command.execute();
     }

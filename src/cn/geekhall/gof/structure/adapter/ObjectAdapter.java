@@ -10,7 +10,7 @@ public class ObjectAdapter implements Target{
     // 被适配者
     private Adaptee adaptee;
 
-    public ObjectAdapter(Adaptee adaptee) {
+    ObjectAdapter(Adaptee adaptee) {
         this.adaptee = adaptee;
     }
 

@@ -7,7 +7,7 @@ package cn.geekhall.gof.behavior.state.sample1;
  * @date 5/1/21 4:16 PM
  */
 public class New extends ThreadState {
-    public New() {
+    New() {
         stateName = "新建状态";
         System.out.println("当前线程处于：新建状态。");
     }

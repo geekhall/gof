@@ -54,19 +54,19 @@ public class MyInvocationHandler implements InvocationHandler {
     /**
      * 预处理：参数设置、记录日志、性能监控、记录时间等等。
      */
-    public void preMethod(String msg){
+    void preMethod(String msg){
         System.out.println("动态代理："+msg+"执行预处理");
     }
 
     /**
      * 事后处理：终止时间、清理数据等
      */
-    public void postMethod(String msg){
+    void postMethod(String msg){
 
         System.out.println("动态代理："+msg+"执行事后清理");
     }
 
-    public void log(String msg){
+    void log(String msg){
         System.out.println("执行了" + msg + "方法！");
     }
 }

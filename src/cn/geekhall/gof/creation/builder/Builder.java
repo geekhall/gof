@@ -13,7 +13,7 @@ public abstract class Builder {
     public abstract void buildCpu();
     public abstract void buildDisk();
     public abstract void buildMemory();
-    public Computer getResult(){
+    Computer getResult(){
         return computer;
     }
 }

@@ -12,7 +12,7 @@ import java.util.List;
 public abstract class Subject {
 
     // 观察者列表
-    protected List<Observer> observers = new ArrayList<Observer>();
+    List<Observer> observers = new ArrayList<Observer>();
 
     // 添加观察者
     public void add(Observer observer){

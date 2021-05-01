@@ -13,7 +13,7 @@ import java.util.HashMap;
 public class PrototypeManager {
     private HashMap<String, Shape> ht = new HashMap<String, Shape>();
 
-    public PrototypeManager() {
+    PrototypeManager() {
         ht.put("Circle", new Circle());
         ht.put("Square", new Square());
     }
@@ -22,7 +22,7 @@ public class PrototypeManager {
         ht.put(key, obj);
     }
 
-    public Shape getShape(String key){
+    Shape getShape(String key){
         Shape temp = ht.get(key);
         return (Shape) temp.clone();
     }

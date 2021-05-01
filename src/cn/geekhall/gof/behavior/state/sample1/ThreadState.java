@@ -6,7 +6,7 @@ package cn.geekhall.gof.behavior.state.sample1;
  * @Desc 抽象线程状态类
  * @date 5/1/21 4:15 PM
  */
-public abstract class ThreadState {
-    protected String stateName;
+abstract class ThreadState {
+    String stateName;
 }
 

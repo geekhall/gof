@@ -25,10 +25,10 @@ public class Square implements Shape {
 
     @Override
     public void countArea() {
-        int a = 0;
-        System.out.println("这是一个正方形，请输入他的边长：");
-        Scanner input = new Scanner(System.in);
-        a = input.nextInt();
+        int a = 10;
+//        System.out.println("这是一个正方形，请输入他的边长：");
+//        Scanner input = new Scanner(System.in);
+//        a = input.nextInt();
         System.out.println("正方形的面积="+ a*a + "\n");
     }
 }

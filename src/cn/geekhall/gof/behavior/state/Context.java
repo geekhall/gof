@@ -21,7 +21,7 @@ public class Context {
         this.state = new ConcreteStateA();
     }
 
-    public void handle(){
+    void handle(){
         state.handle(this);
     }
 }
