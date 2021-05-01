@@ -8,8 +8,18 @@
  */
 package cn.geekhall.main;
 
+import cn.geekhall.arch.ares.AresInvocationHandler;
+import cn.geekhall.arch.ares.IExecutable;
+import cn.geekhall.arch.ares.PatternType;
 import cn.geekhall.arch.spi.IShout;
 import cn.geekhall.basic.reflaction.ReflactionSample;
+import cn.geekhall.gof.behavior.chainofresponsibility.ChainOfResopnsibilitySample;
+import cn.geekhall.gof.behavior.command.Command;
+import cn.geekhall.gof.behavior.command.CommandSample;
+import cn.geekhall.gof.behavior.observer.ObserverSample;
+import cn.geekhall.gof.behavior.state.StateSample;
+import cn.geekhall.gof.behavior.strategy.StrategySample;
+import cn.geekhall.gof.behavior.templatemethod.TemplateMethodSample;
 import cn.geekhall.gof.creation.builder.BuilderSample;
 import cn.geekhall.gof.creation.factory.abstractfactory.AbstractFactorySample;
 import cn.geekhall.gof.creation.factory.factorymethod.FactoryMethodSample;
@@ -25,15 +35,13 @@ import cn.geekhall.gof.principle.principle7.CRPSample;
 import cn.geekhall.gof.structure.adapter.AdapterSample;
 import cn.geekhall.gof.structure.bridge.BridgeSample;
 import cn.geekhall.gof.structure.composite.ComponentSample;
-import cn.geekhall.gof.structure.decorator.Component;
 import cn.geekhall.gof.structure.decorator.DecoratorSample;
-import cn.geekhall.gof.structure.facade.Facade;
 import cn.geekhall.gof.structure.facade.FacadeSample;
-import cn.geekhall.gof.structure.flyweight.Flyweight;
 import cn.geekhall.gof.structure.flyweight.FlyweightSample;
 import cn.geekhall.gof.structure.proxy.ProxySample;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.Observer;
 import java.util.ServiceLoader;
 
 public class Main {
@@ -94,7 +102,6 @@ public class Main {
          * Principle 6 : 迪米特法则（LKP）
          */
         LKPSample.execute();
-
 
         /**
          * Principle 7 : 合成复用原则（SRP）
@@ -173,6 +180,42 @@ public class Main {
          * 结构型模式 7 ： 组合模式（Component)
          */
         ComponentSample.execute();
+
+
+        /**
+         * 行为型模式 1 ： 模版方法模式（TemplateMethod）
+         */
+        TemplateMethodSample.execute();
+
+        /**
+         * 行为型模式 2 ： 策略模式（Strategy）
+         */
+        StrategySample.execute();
+//        IExecutable strategySample = new StrategySample();
+//        AresInvocationHandler handler = new AresInvocationHandler(strategySample);
+//        IExecutable strategyProxy = (IExecutable) handler.getProxy();
+//        strategyProxy.execute();
+
+        /**
+         * 行为型模式 3 ：命令模式（Command）
+         */
+        CommandSample.execute();
+
+        /**
+         * 行为型模式 4 ： 责任链模式（Chain of responsibility）
+         */
+        ChainOfResopnsibilitySample.execute();
+
+
+        /**
+         * 行为型模式 5 ： 状态模式（State）
+         */
+        StateSample.execute();
+
+        /**
+         * 行为模式 6 ： 观察者模式（Observer）
+         */
+        ObserverSample.execute();
 
     }
 
